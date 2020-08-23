@@ -1,7 +1,7 @@
 from .models import Account
 from rest_framework.authtoken.serializers import serializers
 
-from planner.models import Course, Event
+from backend.planner.models import Course, Event
 
 class AccountSerializer(serializers.ModelSerializer):
     course = serializers.PrimaryKeyRelatedField(many=True, queryset=Course.objects.all())
