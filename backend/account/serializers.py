@@ -1,12 +1,10 @@
-from .models import Account
-from rest_framework.authtoken.serializers import serializers
+from rest_framework import serializers
 
-from backend.planner.models import Course, Event
+from djoser.serializers import UserCreateSerializer, UserSerializer
 
-class AccountSerializer(serializers.ModelSerializer):
-    course = serializers.PrimaryKeyRelatedField(many=True, queryset=Course.objects.all())
-    event = serializers.PrimaryKeyRelatedField(many=True, queryset=Event.objects.all())
+from .models import User
 
-    class Meta:
-        model = Account
-        fields = ['email', 'username', 'course', 'event']
+class UserCreateSerializer(UserCreateSerializer):
+    class Meta(UserCreateSerializer.Meta):
+        model = User
+        fields = ('id', 'email', 'username', 'password', 'first_name', 'last_name', 'phone')
