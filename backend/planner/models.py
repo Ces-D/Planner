@@ -57,7 +57,7 @@ class CourseAssignment(models.Model):
                 {'end_repeat': ('This field cannot be empty.')})
 
     def __str__(self):
-        return self.event_title
+        return self.assignment_title
 
 
 class Event(models.Model):
