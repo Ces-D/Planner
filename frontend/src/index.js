@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Planner from './planner/Planner';
 import * as serviceWorker from './serviceWorker';
+import "bootstrap/dist/css/bootstrap.css";
+import Header from './core/header'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Planner />
   </React.StrictMode>,
   document.getElementById('root')
 );
