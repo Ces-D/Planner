@@ -11,3 +11,7 @@ https://pypi.org/project/django-cors-headers/ <br />
 https://www.django-rest-framework.org/ <br />
 https://fullcalendar.io/docs/getting-started <br />
 https://ccbv.co.uk/projects/Django/3.0/django.views.generic.base/View/ <br />
+
+### Possible Tools
+https://babeljs.io/docs/en/ <br />
+https://reactrouter.com/ <br />
